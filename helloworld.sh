@@ -7,8 +7,13 @@
 
 # Declaration of variables
 myVariable= "I am working perfectly!"
+myVariable= "I am working so so"
+
+
 
 # Main
+
+
 
 echo "Hello World"
 echo $myVariable

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Script Name:                  Ops Challenge 2 class 3
+# Author:                       Steve Cherewaty
+# Date of latest revision:      02/21/2024
+# Purpose:                      Run a function
+
+# Declaration of variables
+
+
+
+# Declare Functions
+
+print_message() {
+    echo "reboot   system boot  6.5.0-18-generic Wed Feb 21 11:00   still running
+reboot   system boot  6.5.0-18-generic Tue Feb 20 20:26 - 22:23  (01:56)
+reboot   system boot  6.5.0-18-generic Tue Feb 20 10:54 - 17:52  (06:58)
+reboot   system boot  6.5.0-18-generic Mon Feb 19 13:07 - 17:15  (04:07)
+stevamou tty2         tty2             Sun Feb 18 10:13 - 10:40  (00:26)
+reboot   system boot  6.5.0-17-generic Sun Feb 18 10:13 - 10:42  (00:28)
+stevamou :1           :1               Tue Feb 13 15:10 - down   (01:01)
+stevamou pts/0        192.168.40.83    Tue Feb 13 14:57 - 15:06  (00:09)
+reboot   system boot  6.5.0-17-generic Tue Feb 13 14:51 - 16:11  (01:20)
+reboot   system boot  6.5.0-17-generic Fri Feb  9 11:01 - 18:10  (07:08)
+stevamou pts/0        192.168.40.83    Thu Feb  8 15:55 - 16:15  (00:19)
+stevamou pts/0        192.168.40.83    Thu Feb  8 12:33 - 15:35  (03:01)
+stevamou tty2         tty2             Thu Feb  8 12:31 - 12:32  (00:01)
+stevamou tty2         tty2             Thu Feb  8 11:06 - 11:26  (00:20)
+reboot   system boot  6.5.0-17-generic Thu Feb  8 11:05 - 20:30  (09:24)
+stevamou tty2         tty2             Wed Feb  7 13:39 - down   (04:33)
+reboot   system boot  6.5.0-17-generic Wed Feb  7 13:39 - 18:12  (04:33)
+stevamou tty2         tty2             Wed Feb  7 13:22 - down   (00:16)
+reboot   system boot  6.2.0-26-generic Wed Feb  7 07:21 - 13:38  (06:17)
+stevamou tty2         tty2             Tue Feb  6 14:08 - down   (00:03)
+reboot   system boot  6.2.0-26-generic Tue Feb  6 14:07 - 14:11  (00:04)"
+}
+
+
+# Main
+
+# echo $greeting
+# greeting="This is the login history"
+# echo $greeting
+
+# Invoking 
+print_message
+print_message
+print_message
+
+# End
+
+echo "This is the login history"
