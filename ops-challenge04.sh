@@ -10,23 +10,20 @@
 
 
 
+names=("dir1" "dir2" "dir3" "dir4")
+#index   0      1      2      3
+#Length = 4
+#Index = 0-3
+
+echo "The first name in the array is: ${names[0]}" #
+echo "The second name in the array is: ${names[1]}" #
+echo "The third name in the array is: ${names[2]}" #
+echo "The fourth name in the array is: ${names[3]}" #
+
+
 # Declare Functions
 
-print_message() {
-    echo "var=$(last)"
-}
+#main
 
+#end
 
-# Main
-
-# echo $greeting
-# greeting="This is the login history"
-# echo $greeting
-
-# Invoking 
-print_message
-
-
-# End
-
-echo "This is the login history"
