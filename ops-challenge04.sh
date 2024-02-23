@@ -21,6 +21,13 @@ echo "The third name in the array is: ${names[2]}" #
 echo "The fourth name in the array is: ${names[3]}" #
 
 
+new_name="dir5"
+names+=("$new_name")
+
+
+echo "All names in the array: ${names[@]}"
+
+
 # Declare Functions
 
 #main
