@@ -7,14 +7,18 @@
 # Resources:  
 
 
+
+
+
 # write the array for directories
-directory_list=( "dir1" "dir2" "dir3" "dir4")
+directory_list=( "dir1" "dir2" "dir3" "dir4" )
 
 # write the function to see if a directory is on the list
 is_the_directory_in_this_list() {
     search_directory="$1"
     for directory in "${directory_list[@]}"; do 
-    if [ "$directory" == "$search_directory"]; then
+    #print $directory
+    if [[ "$directory" == "$search_directory" ]]; then
     return 0
     fi 
 done
@@ -32,7 +36,7 @@ if is_the_directory_in_this_list "$directory_to_check"; then
     echo "Directory '$directory_to_check' already exists."
 else
     read -p "'$directory_to_check' does not exist, do you want to add it? (yes/no)" add_item
-    if [ "$add_directory" = "yes" ]; then
+    if [ "$add_item" = "yes" ]; then
     directory_list+=("$directory_to_check")
     echo "'$directory_to_check' added to directories"
     else
