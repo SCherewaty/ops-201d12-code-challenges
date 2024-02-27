@@ -16,8 +16,6 @@ var=17420
 ask_users_name () {
     read -p "enter your PID:" PID
     echo "Your PID is: $PID"
-
- 
 }
 
 
@@ -30,19 +28,18 @@ function proCheck ()
     ps -a
     # ask user for pid
     ask_users_name
-
-    #store pid in variable
-
-    #kill pid
-
-    #while process is running, keep asking for pid
-
 }
 proCheck
 
+#loop
+while true; Declaration
+    ask_users_name
+    echo "enter your PID:"
+    read $PID
 
-
-
+ echo "enter your PID:"
+ read -p
+ done
 
 
 
