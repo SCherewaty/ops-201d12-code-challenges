@@ -11,18 +11,12 @@ echo "Computer Name: "$(lshw | grep "" -m1)
 
 # print the first 11 lines and exclude all but lines 1-4
 echo "CPU "$(lshw | grep "*-cpu" -A 11 | sed -n '1,6p;7,9d;10,11p') 
-
-echo "RAM "$(lshw | grep  "*-disk:1" -A)
-
-
-
-
-
-
-
-
-
-
+# RAM
+echo "RAM "$(lshw | grep "*-memory" -A 4)
+# Display adapter
+echo "Display Adapter "$(lshw | grep "*-display" -A 10 )
+# Network Adapter
+echo "Network Adapter "$(lshw | grep "*-network" -A 15 )
 
 
 
