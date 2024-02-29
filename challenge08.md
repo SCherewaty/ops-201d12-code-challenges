@@ -1,16 +1,28 @@
+
 @echo off
+setlocal enabledelayedexpansion
 
-set/p name=Enter your name:
-echo Hello, %name%! Welcome to THE JUNGLE
+set /p sourcePath=Enter the source folder path:
 
-set /a age=18
-if %age% geq 18 (
-	echo You are allowed in THE JUNGLE
+set /p destinationPath=Enter the destination folder path:
+
+if not exist "!sourcePath!\" (
+    echo Error: Source folder does not exist.
+    goto :eof
+)
+
+if not exist "!destinationPath!\" (
+    echo Error: Destination folder does not exist.
+    goto :eof
+)
+
+robocopy "!sourcePath!" "!destinationPath!" /E
+
+if errorlevel 8 (
+    echo Error: ROBOCOPY encountered errors during the copy operation.
 ) else (
-	echo Come back when you're older
+    echo Copy operation completed successfully.
 )
 
-echo Counting from 1 to 5:
-for /1 %%i in (1,1,5) do (
-	echo %%i
-)
+:end
+endlocal
