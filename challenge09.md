@@ -13,6 +13,6 @@ PS C:\Users\stevamous\desktop> Get-EventLog -LogName System | Where-Object {$_.E
 
 # Print to the screen the most recent 20 entries from the System event log.
 
-PS C:\> Get-Eventlog -LogName System -Newest 20
+PS C:\> Get-Eventlog -LogName System -Newest 20 | Format-List
 
 #  Print to the screen all sources of the 500 most recent entries in the system event log.  Ensure that the full lines are displayed (show entire text).
